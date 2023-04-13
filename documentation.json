@@ -1,0 +1,1905 @@
+{
+    "pipes": [],
+    "interfaces": [],
+    "injectables": [],
+    "guards": [],
+    "interceptors": [],
+    "classes": [],
+    "directives": [],
+    "components": [
+        {
+            "name": "AppComponent",
+            "id": "component-AppComponent-f3ea1d4c0b0835b067cab2caf6ca77d192d2ed939b0b52700c18b79abab7e45d1855f638c03e48ab00390a009d7cf6febc7487cf41bafad4213f838aa1e80663",
+            "file": "src/app/app.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-root",
+            "styleUrls": [
+                "./app.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./app.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "operandoA",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 13
+                },
+                {
+                    "name": "operandoB",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 14
+                },
+                {
+                    "name": "resultado",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 15
+                },
+                {
+                    "name": "title",
+                    "defaultValue": "'componente-textfield'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 11
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "hello",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 21,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "onString",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 17,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "welcome",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 25,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        123
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input } from '@angular/core';\nimport { FormControl, FormGroup } from '@angular/forms';\n\n@Component({\n  selector: 'app-root',\n  templateUrl: './app.component.html',\n  styleUrls: ['./app.component.css']\n})\nexport class AppComponent {\n  \n  title = 'componente-textfield';\n\n  operandoA:string;\n  operandoB:string;\n  resultado:number;\n\n  onString():void {\n    this.resultado = parseInt(this.operandoA) + parseInt(this.operandoB);\n  }\n\n  hello():void {\n    alert(\"Hello\");\n  }\n\n  public welcome() {   \n    alert( \"Welcome to Angular 11!\")\n  }   \n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./app.component.css"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<div>\n  <app-header [tipo]=\"'desktopHB'\" [version]=\"'1.0.0 V2'\"></app-header>\n    \n  <div class=\"content\" role=\"main\">\n    \n    <!-- Highlight Card -->\n    <div class=\"card highlight-card card-small\">\n\n      <svg id=\"rocket\" xmlns=\"http://www.w3.org/2000/svg\" width=\"101.678\" height=\"101.678\" viewBox=\"0 0 101.678 101.678\">\n        <title>Rocket Ship</title>\n        <g id=\"Group_83\" data-name=\"Group 83\" transform=\"translate(-141 -696)\">\n          <circle id=\"Ellipse_8\" data-name=\"Ellipse 8\" cx=\"50.839\" cy=\"50.839\" r=\"50.839\" transform=\"translate(141 696)\" fill=\"#dd0031\"/>\n          <g id=\"Group_47\" data-name=\"Group 47\" transform=\"translate(165.185 720.185)\">\n            <path id=\"Path_33\" data-name=\"Path 33\" d=\"M3.4,42.615a3.084,3.084,0,0,0,3.553,3.553,21.419,21.419,0,0,0,12.215-6.107L9.511,30.4A21.419,21.419,0,0,0,3.4,42.615Z\" transform=\"translate(0.371 3.363)\" fill=\"#fff\"/>\n            <path id=\"Path_34\" data-name=\"Path 34\" d=\"M53.3,3.221A3.09,3.09,0,0,0,50.081,0,48.227,48.227,0,0,0,18.322,13.437c-6-1.666-14.991-1.221-18.322,7.218A33.892,33.892,0,0,1,9.439,25.1l-.333.666a3.013,3.013,0,0,0,.555,3.553L23.985,43.641a2.9,2.9,0,0,0,3.553.555l.666-.333A33.892,33.892,0,0,1,32.647,53.3c8.55-3.664,8.884-12.326,7.218-18.322A48.227,48.227,0,0,0,53.3,3.221ZM34.424,9.772a6.439,6.439,0,1,1,9.106,9.106,6.368,6.368,0,0,1-9.106,0A6.467,6.467,0,0,1,34.424,9.772Z\" transform=\"translate(0 0.005)\" fill=\"#fff\"/>\n          </g>\n        </g>\n      </svg>\n\n      <span>{{ title }} app is running!</span>\n\n    </div>\n\n    <h2>Resources</h2>\n    <p>Here are some links to help you get started:</p>\n\n\n    <!-- [textLabel1]=\"'Label'\" [textLabel2]=\"'Detalle'\" -->\n    <!-- <app-textfield [textPlaceholder]=\"'Placeholder'\" ngDefaultControl [(ngModel)]=\"operandoA\"></app-textfield> -->\n\n    <!-- <app-textfield [textLabel1]=\"'Label'\" [textLabel2]=\"'Detalle'\" [textPlaceholder]=\"'Placeholder'\" ngDefaultControl [(ngModel)]=\"operandoB\"> </app-textfield> -->\n\n    <!-- <app-boton-hb (click)=\"onString()\" [tipo]=\"'principalHB'\" [texto]=\"'Aceptar'\"></app-boton-hb> -->\n\n    <!-- <button type=\"submit\" (click)=\"onString()\">Aceptar</button> -->\n    <!-- <input type=\"text\" ngDefaultControl [(ngModel)]=\"operandoA\"> -->\n\n    <!-- <p> {{resultado}} </p> -->\n\n    <!-- <app-buscador [textPlaceholder]=\"'Placeholder'\"></app-buscador> -->\n\n    <!-- <app-avatar [texto]=\"'FG'\" [disabled]=\"'true'\"></app-avatar> -->\n\n    <!-- <app-lista></app-lista> -->\n\n  </div>\n</div>"
+        },
+        {
+            "name": "AvatarComponent",
+            "id": "component-AvatarComponent-2cda26672911cdaad9be19e50f79230a53cef30408b292f4640a75936496239a3b908dfc138cf83d3e36063f0a6c6a31818989a8372b7f047b440739a0cae557",
+            "file": "src/app/componentes/avatar/avatar.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-avatar",
+            "styleUrls": [
+                "./avatar.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./avatar.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "disabled",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "texto",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 14,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-avatar',\n  templateUrl: './avatar.component.html',\n  styleUrls: ['./avatar.component.css']\n})\nexport class AvatarComponent implements OnInit {\n\n  @Input() texto: string;\n  @Input() disabled: string;\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');\r\n.avatar {\r\n    display: flex;\r\n    flex-direction: row;\r\n    justify-content: center;\r\n    align-items: center;\r\n    gap: 10px;\r\n    isolation: isolate;\r\n    \r\n    width: 40px;\r\n    height: 40px;\r\n\r\n    background: #F4F4F4;\r\n    border: 1px solid #FFFFFF;\r\n    border-radius: 100px;\r\n}\r\n\r\nbutton {\r\n    background: none;\r\n    border: none;\r\n    cursor: pointer;\r\n    padding: 18px;\r\n}\r\n\r\np {\r\n    font-family: 'Roboto';\r\n    font-style: normal;\r\n    font-weight: 400;\r\n    font-size: 14px;\r\n    line-height: 22px;\r\n\r\n    color: #333333;\r\n}\r\n\r\n.avatar:hover {\r\n    background: #F4F4F4;\r\n    border: 1px solid #DEDEDE;\r\n    border-radius: 100px;\r\n}\r\n\r\n.true {\r\n    cursor: not-allowed !important;\r\n    box-shadow: none !important;\r\n}",
+                    "styleUrl": "./avatar.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 11
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<span class=\"avatar\">\n    <button type=\"button\" class=\"boton {{disabled}}\" disabled=\"{{disabled}}\">{{texto}}</button>\n</span>\n\n"
+        },
+        {
+            "name": "BotonHbComponent",
+            "id": "component-BotonHbComponent-2fa4862afeab16f832b005935df59b585f9f08cfe096a2e5d8cb28c8619066b5efbdeb28d13cecd5801f38ef772325b74b55a241b373b365c3d81a07247e6427",
+            "file": "src/app/componentes/boton-hb/boton-hb.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-boton-hb",
+            "styleUrls": [
+                "./boton-hb.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./boton-hb.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "icono",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 14,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "source",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "texto",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 15,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "tipo",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 13,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "tipoTipografia",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 16,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 18,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-boton-hb',\r\n  templateUrl: './boton-hb.component.html',\r\n  styleUrls: ['./boton-hb.component.css']\r\n})\r\nexport class BotonHbComponent implements OnInit {\r\n\r\n  constructor() {}\r\n\r\n  @Input() source: string;\r\n  @Input() tipo: string;\r\n  @Input() icono: string;\r\n  @Input() texto: string;\r\n  @Input() tipoTipografia: string;\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');\r\n\r\n.boton {\r\n    display: flex;\r\n    flex-direction: row;\r\n    justify-content: center;\r\n    align-items: center;\r\n    padding: 12px 24px;\r\n    gap: 8px;\r\n\r\n    border-radius: 8px;\r\n\r\n    min-width: 79px;\r\n    height: 48px;\r\n\r\n    flex: none;\r\n    order: 0;\r\n    flex-grow: 0;\r\n    \r\n    font-family: 'Roboto', sans-serif;\r\n    font-style: normal;\r\n    font-weight: 500;\r\n    font-size: 16rem 1.500rem;\r\n    line-height: 24px;\r\n\r\n    color: #FFFFFF;\r\n\r\n    text-align: center;\r\n}\r\n\r\n.boton { cursor:pointer; }\r\n\r\n.H1Regular {\r\n    font-weight: 400;\r\n    font-size: 2rem;\r\n    line-height: 40px;\r\n}\r\n\r\n.H1Medium {\r\n    font-size: 2rem;\r\n    line-height: 40px;\r\n}\r\n\r\n.H2Regular {\r\n    font-weight: 400;\r\n    font-size: 1.500rem;\r\n    line-height: 32px;\r\n}\r\n\r\n.H2Medium {\r\n    font-size: 1.500rem;\r\n    line-height: 40px;\r\n}\r\n\r\n.H3Regular {\r\n    font-weight: 400;\r\n    font-size: 1.125rem;\r\n    line-height: 24px;\r\n}\r\n\r\n.H3Medium {\r\n    font-size: 1.125rem;\r\n    line-height: 24px;\r\n}\r\n\r\n.H4Regular {\r\n    font-weight: 400;\r\n    font-size: 1rem;\r\n    line-height: 24px;\r\n}\r\n\r\n.H4Medium {\r\n    font-size: 1rem;\r\n    line-height: 24px;\r\n}\r\n\r\n.H5Regular {\r\n    font-weight: 400;\r\n    font-size: 0.875rem;\r\n    line-height: 22px;\r\n}\r\n\r\n.H5Medium {\r\n    font-size: 0.875rem;\r\n    line-height: 22px;\r\n}\r\n\r\n.H6Regular {\r\n    font-weight: 400;\r\n    font-size: 0.750rem;\r\n    line-height: 12px;\r\n}\r\n\r\n.H6Medium {\r\n    font-size: 0.750rem;\r\n    line-height: 12px;\r\n}\r\n\r\n.principalHB {\r\n    background: #F37320;\r\n    border: none;\r\n}\r\n\r\n\r\n.principalHB:hover {\r\n    background: #FE9552;\r\n}\r\n\r\n.secundarioHB {\r\n    background: transparent;\r\n    border: solid #F37320;\r\n    color: #F37320;\r\n}\r\n\r\n.secundarioHB:hover {\r\n    border:solid #FE9552;\r\n    color: #FE9552\r\n}\r\n\r\n.terciarioHB {\r\n    background: transparent;\r\n    border: none;\r\n    color: #F37320;\r\n} \r\n\r\n.terciarioHB:hover {\r\n    color: #FE9552;\r\n}\r\n\r\n.secundarioHB:hover .source , .terciarioHB:hover .source {\r\n    content:url(\"/assets/imagenes/iconodownloadnaranjahover.svg\");\r\n}\r\n\r\n.principalOB {\r\n    background: #06CA75;\r\n    border: none;\r\n}\r\n\r\n.principalOB:hover {\r\n    background: #00AB8E;\r\n}\r\n\r\n.secundarioOB {\r\n    background: transparent;\r\n    border: solid #06CA75;\r\n    color: #06CA75;\r\n}\r\n\r\n.secundarioOB:hover {\r\n    border:solid #00AB8E;\r\n    color: #00AB8E;\r\n}\r\n\r\n.terciarioOB {\r\n    background: transparent;\r\n    border: none;\r\n    color: #06CA75;\r\n}\r\n\r\n.terciarioOB:hover {\r\n    color: #00AB8E;\r\n}\r\n\r\n.secundarioOB:hover .source , .terciarioOB:hover .source {\r\n    content:url(\"/assets/imagenes/iconodownloadverdehover.svg\");\r\n}\r\n\r\n.principalOff {\r\n    background: #9B9B9B;\r\n    border: none;\r\n    cursor:not-allowed !important;\r\n}\r\n\r\n.secundarioOff {\r\n    background: transparent;\r\n    border: solid #9B9B9B;\r\n    color: #9B9B9B;\r\n    cursor:not-allowed !important;\r\n}\r\n\r\n.terciarioOff {\r\n    background: transparent;\r\n    border: none;\r\n    color: #9B9B9B;\r\n    cursor:not-allowed !important;\r\n}\r\n\r\n",
+                    "styleUrl": "./boton-hb.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div>\r\n    <button class=\"boton {{tipo}} texto {{tipoTipografia}}\">\r\n        <img *ngIf=\"icono\" class=\"source\" src=\"{{icono}}\">\r\n            {{texto}}\r\n    </button>\r\n</div>\r\n\r\n    \r\n"
+        },
+        {
+            "name": "BuscadorComponent",
+            "id": "component-BuscadorComponent-347d20d59b3d26b7cba64de204c1c189d5df042a91ec0a29278300a08aef85894eddc28bc7ff97790aa2a6fea0ca79a25649d95b4e49bc8e00ed5b04ec87cbd6",
+            "file": "src/app/componentes/buscador/buscador.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-buscador",
+            "styleUrls": [
+                "./buscador.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./buscador.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "disabled",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 14,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "text",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "textPlaceholder",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 13,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 16,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-buscador',\n  templateUrl: './buscador.component.html',\n  styleUrls: ['./buscador.component.css']\n})\nexport class BuscadorComponent implements OnInit {\n\n  constructor() { }\n\n  @Input() text: string;\n  @Input() textPlaceholder: string;\n  @Input() disabled: string;\n\n  ngOnInit(): void {\n  }\n\n  \n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');\r\n\r\n.buscador {\r\n    box-sizing: border-box;\r\n    display: flex;\r\n    flex-direction: row;\r\n    align-items: center;\r\n    padding: 16px;\r\n    gap: 8px;\r\n\r\n    width: 552px;\r\n    height: 56px;\r\n\r\n    background: #FFFFFF;\r\n\r\n    border: 1px solid #DEDEDE;\r\n    border-radius: 8px;\r\n}\r\n\r\n.textPlaceholder {\r\n    font-family: 'Roboto';\r\n    font-style: normal;\r\n    font-weight: 400;\r\n    font-size: 16px;\r\n    line-height: 24px;\r\n\r\n    color: #9B9B9B;\r\n}\r\n\r\ninput[type=search i]:focus {\r\n    background: #FFFFFF;\r\n    border: 1px solid #DEDEDE;\r\n    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);\r\n    border-radius: 8px;\r\n    outline: none;\r\n    color: #333333;\r\n}\r\n\r\n/* Completa */\r\n/* input[type=search i]:focus::-webkit-search-cancel-button {\r\n    content: url(\"/assets/imagenes/iconocruz.svg\");\r\n    appearance: none;\r\n} */\r\n\r\n/* input[type=search i]:focus #search-clear {\r\n    content: url(\"/assets/imagenes/iconocruz.svg\");\r\n    appearance: none;\r\n}\r\n\r\ninput[type=\"search\" i]:enabled:read-write:-webkit-any(:focus)::-webkit-search-cancel-button {\r\n    content: url(\"/assets/imagenes/iconocruz.svg\");\r\n    appearance: none;\r\n}\r\n\r\ninput[type=\"search\" i]::-webkit-search-cancel-button {\r\n    content: url(\"/assets/imagenes/iconocruz.svg\");\r\n    appearance: none;\r\n} */\r\n\r\n@media screen and (max-width: 768px) {\r\n    .buscador {\r\n        width: 100%;\r\n    }\r\n}\r\n\r\n.true {\r\n    background: #FFFFFF;\r\n    border: 1px solid #DEDEDE;\r\n    border-radius: 8px;\r\n    cursor:not-allowed !important;\r\n    box-shadow: none !important;\r\n}\r\n\r\n.true:-webkit-search-cancel-button {\r\n    opacity: 0 !important;\r\n    appearance: none;\r\n}",
+                    "styleUrl": "./buscador.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<input type=\"search\" placeholder=\"{{textPlaceholder}}\" class=\"buscador textPlaceholder {{disabled}}\" readonly=\"{{disabled}}\" />\n\n<!-- <div class=\"box\">\n    <div class=\"container-1\">\n        <span class=\"icon\"><i class=\"fa fa-search\"></i></span>\n        <input type=\"search\" id=\"search\" placeholder=\"Search...\" />\n    </div>\n  </div> -->"
+        },
+        {
+            "name": "HeaderComponent",
+            "id": "component-HeaderComponent-b4efb078d7afdb198705909f9ed20695bf63757ddb9700132aeb206bd84bd54a2e5dfb738c96bbcf42838db10647e391a07dac557156625a625821b1e38be582",
+            "file": "src/app/componentes/header/header.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-header",
+            "styleUrls": [
+                "./header.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./header.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "selector",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "tipo",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 14,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "version",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 13,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 17,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-header',\n  templateUrl: './header.component.html',\n  styleUrls: ['./header.component.css']\n})\nexport class HeaderComponent implements OnInit {\n\n  constructor() { }\n\n  @Input() selector: string;\n  @Input() version: string;\n  @Input() tipo: string;\n\n  \n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');\r\n\r\nbody {\r\n\tpadding-top: 80px;\r\n}\r\n\r\n.tipografiag {\r\n    font-family: 'Roboto', sans-serif;\r\n    font-style: normal;\r\n    font-weight: 500;\r\n    font-size: 12px;\r\n    line-height: 14px;\r\n    float: right;\r\n}\r\n\r\n.tipog {\r\n    box-sizing: border-box;\r\n    flex-direction: row;\r\n    align-items: right;\r\n    padding: 12px 16px;\r\n    gap: 16px;\r\n    overflow: hidden;\r\n    border-bottom: 1px solid #DEDEDE;\r\n    width: 100%;\r\n}\r\n\r\n.desktopHB {\r\n    background: #FFFFFF;\r\n    color: #333333;\r\n}\r\n\r\n.desktopOB {\r\n    background: #06CA75;\r\n    color: #FFFFFF;\r\n}\r\n\r\n.desktopHB img {\r\n    content:url(\"/assets/imagenes/hbicononaranja.svg\");\r\n}\r\n\r\n.desktopOB img {\r\n    content:url(\"/assets/imagenes/obiconoblanco.svg\");\r\n}\r\n\r\n.select select {\r\n    padding: 4px 8px 4px 4px;\r\n    width: 120px;\r\n    height: 32px;\r\n    outline: #06CA75; \r\n    -moz-border-radius: 2.5em; \r\n    -webkit-border-radius: 2.5em; \r\n    border-radius: 2.5em;\r\n    background: #06CA75 url(\"/assets/imagenes/obRed.svg\") no-repeat 90% center;\r\n    border-color: transparent;\r\n    color: transparent;\r\n    position: fixed;\r\n    right: 12px;\r\n    top: 12px;\r\n}",
+                    "styleUrl": "./header.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<header class=\"tipog {{tipo}}\" >\n    <div>\n        <img>\n        <p *ngIf=\"version\" class=\"tipografiag {{version}}\">\n            {{version}}\n        </p>\n        <div *ngIf=\"selector\" class=\"select {{selector}}\">\n            <select>\n              <option>Opción 1</option>\n              <option>Opción 2</option>\n              <option>Opción X</option>\n            </select>\n        </div>\n    </div>\n</header>\n\n"
+        },
+        {
+            "name": "ListaComponent",
+            "id": "component-ListaComponent-5751ed144b0e033fd2a03ab8e1ea78d019e6fd57adf5809c79dcd0d6f2fddfdee0f24451f63cd509d1f9d15b8c006ee5baf8c4df6f35892028d298dff3cc20e4",
+            "file": "src/app/componentes/lista/lista.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-lista",
+            "styleUrls": [
+                "./lista.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./lista.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-lista',\n  templateUrl: './lista.component.html',\n  styleUrls: ['./lista.component.css']\n})\nexport class ListaComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./lista.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<p>lista works!</p>\n"
+        },
+        {
+            "name": "TextfieldComponent",
+            "id": "component-TextfieldComponent-e2bc9c25fbef5282878b6117a0a967bdefcb4d1fca69eb51a1f9426736478a9606c59f40926447eeecd1aa58c0ad254e41deb496d6369c1c8c9935a07a99e394",
+            "file": "src/app/componentes/textfield/textfield.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-textfield",
+            "styleUrls": [
+                "./textfield.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./textfield.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "control",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 13,
+                    "type": "FormControl",
+                    "decorators": []
+                },
+                {
+                    "name": "disabled",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 18,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "operandoA",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 23,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "textLabel1",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 16,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "textLabel2",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 17,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "textPlaceholder",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 15,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "tipo",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 14,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 20,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "onString",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 25,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\nimport { FormControl } from '@angular/forms';\n\n@Component({\n  selector: 'app-textfield',\n  templateUrl: './textfield.component.html',\n  styleUrls: ['./textfield.component.css']\n})\nexport class TextfieldComponent implements OnInit {\n\n  constructor() { }\n\n  @Input() control:FormControl;\n  @Input() tipo: string;\n  @Input() textPlaceholder: string;\n  @Input() textLabel1: string;\n  @Input() textLabel2: string;\n  @Input() disabled: string;\n\n  ngOnInit(): void {\n  }\n\n  @Input() operandoA: string;\n\n  onString(): void {\n    this.operandoA;\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');\r\n\r\n.tipog {\r\n    box-sizing: border-box;\r\n\r\n    display: flex;\r\n    flex-direction: row;\r\n    align-items: flex-start;\r\n    padding: 12px 16px;\r\n    gap: 8px;\r\n\r\n    width: 194px;\r\n    height: 48px;\r\n\r\n    background: #FFFFFF;\r\n    border: 1px solid #9B9B9B;\r\n    border-radius: 8px; \r\n}\r\n\r\n.tipografiaPlaceholder {\r\n\r\n    font-family: 'Roboto';\r\n    font-style: normal;\r\n    font-weight: 400;\r\n    font-size: 16px;\r\n    line-height: 24px;\r\n}\r\n\r\ninput[type=text]:focus {\r\n    border: 1px solid #805ADC;\r\n    color: #333333;\r\n    outline: none;\r\n}\r\n\r\nlabel {\r\n    font-family: 'Roboto';\r\n    font-style: normal;\r\n    font-weight: 400;\r\n    font-size: 16px;\r\n    line-height: 24px;\r\n\r\n    color: #333333;\r\n}\r\n\r\nlabel.true {\r\n    background: transparent;\r\n    border: none;\r\n}\r\n\r\n.true {\r\n    background: #F4F4F4;\r\n    border: 1px solid #DEDEDE;\r\n    cursor:not-allowed !important;\r\n    color: #9B9B9B;\r\n}",
+                    "styleUrl": "./textfield.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 9
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div>\n    <label class=\"{{disabled}}\">{{textLabel1}}</label>\n    <input type=\"text\" class=\"tipog tipografiaPlaceholder {{disabled}}\" disabled=\"{{disabled}}\" placeholder=\"{{textPlaceholder}}\">\n    <label class=\"{{disabled}}\">{{textLabel2}}</label>\n</div>"
+        }
+    ],
+    "modules": [
+        {
+            "name": "AppModule",
+            "id": "module-AppModule-ae8c28be3b41b13c16dbe9751f38c20c6a7dd1222231a556fb87455f1be09481e0637aeed57cabfb3d9082e4b01facbfcad913863b0d2392a4c2d7d4b910bf0b",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/app.module.ts",
+            "methods": [],
+            "sourceCode": "import { forwardRef, NgModule } from '@angular/core';\nimport { FormsModule, NG_VALUE_ACCESSOR } from '@angular/forms';\nimport { BrowserModule } from '@angular/platform-browser';\n\nimport { AppComponent } from './app.component';\nimport { AvatarModule } from './componentes/avatar.module';\nimport { BotonModule } from './componentes/boton.module';\nimport { BuscadorModule } from './componentes/buscador.module';\nimport { HeaderModule } from './componentes/header.module';\nimport { ListaModule } from './componentes/lista.module';\nimport { TextfieldModule } from './componentes/textfield.module';\n\n@NgModule({\n  declarations: [\n    AppComponent\n  ],\n  imports: [\n    BrowserModule,\n    TextfieldModule,\n    HeaderModule,\n    BuscadorModule,\n    AvatarModule,\n    BotonModule,\n    ListaModule,\n    FormsModule\n  ],\n  providers: [],\n  bootstrap: [AppComponent]\n})\nexport class AppModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "AppComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": [
+                        {
+                            "name": "AvatarModule"
+                        },
+                        {
+                            "name": "BotonModule"
+                        },
+                        {
+                            "name": "BuscadorModule"
+                        },
+                        {
+                            "name": "HeaderModule"
+                        },
+                        {
+                            "name": "ListaModule"
+                        },
+                        {
+                            "name": "TextfieldModule"
+                        }
+                    ]
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": [
+                        {
+                            "name": "AppComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "AvatarModule",
+            "id": "module-AvatarModule-70eb06e3d43e976c25c742e1f010ff3471b61252100ee801b728977a1582d1427d11f1c442e495c4c08a1b57f68b998d438ba14941e4e49068be208639170e6b",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/componentes/avatar.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport { AvatarComponent } from './avatar/avatar.component';\n\n\n\n@NgModule({\n  declarations: [AvatarComponent],\n  imports: [\n    CommonModule\n  ],\n  exports : [AvatarComponent]\n})\nexport class AvatarModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "AvatarComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "AvatarComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "BotonModule",
+            "id": "module-BotonModule-43cd4a8a30b44af60c624126d0a97fdb8c6173487a6c0f4e4a4e9fffd622a26223b0d1101ff8b69b732cd71ba4f52bcce2ef3c64190e59c6f7c9e78dabcf186b",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/componentes/boton.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { CommonModule } from '@angular/common';\r\nimport { BotonHbComponent } from './boton-hb/boton-hb.component';\r\n\r\n\r\n\r\n@NgModule({\r\n  declarations: [BotonHbComponent],\r\n  exports: [BotonHbComponent],\r\n  imports: [\r\n    CommonModule\r\n  ]\r\n})\r\nexport class BotonModule { }\r\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "BotonHbComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "BotonHbComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "BuscadorModule",
+            "id": "module-BuscadorModule-138d82aa2dcd95029adea6aa2acd6bbf3e6895d57276f337e31ece6c196976608b749d8eed2e100c05462763c2213b80fadfc482bbe98dd4509c33be6bbb2b0f",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/componentes/buscador.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport { BuscadorComponent } from './buscador/buscador.component';\n\n\n\n@NgModule({\n  declarations: [BuscadorComponent],\n  imports: [\n    CommonModule\n  ],\n  exports: [BuscadorComponent]\n})\nexport class BuscadorModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "BuscadorComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "BuscadorComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "HeaderModule",
+            "id": "module-HeaderModule-9deaf5de38c50f6e3f406eb9717bafc1f7b3f477c464c5df85a1464b935cfde474e645792d710baeb2a13630e70b6f60d0752105a5b371dc821e054fde0b12f4",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/componentes/header.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport { HeaderComponent } from './header/header.component';\n\n\n\n@NgModule({\n  declarations: [\n    HeaderComponent,\n  ],\n  exports: [ HeaderComponent ],\n  imports: [\n    CommonModule\n  ],\n})\nexport class HeaderModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "HeaderComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "HeaderComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "ListaModule",
+            "id": "module-ListaModule-23b10d9c2cb118cf785126278655892550c0419660ccc5a5bb1a84abc48d89e8318ba20bf4745d48c62b156aae6e13d063370440241c2f3fa4b2a0e1fa836770",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/componentes/lista.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport { ListaComponent } from './lista/lista.component';\n\n\n\n@NgModule({\n  declarations: [ListaComponent],\n  imports: [\n    CommonModule\n  ],\n  exports: [ListaComponent]\n})\nexport class ListaModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "ListaComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "ListaComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "TextfieldModule",
+            "id": "module-TextfieldModule-a954130160691889b000f09b555a8ec3f5e3af66ab62bd3749b35a5b739eef2028c4b521f38d133885624753dd24130b6fa6115fbfe4ca1c668224b8736db822",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/componentes/textfield.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport { TextfieldComponent } from './textfield/textfield.component';\n\n\n\n@NgModule({\n  declarations: [\n    TextfieldComponent\n  ],\n  imports: [\n    CommonModule\n  ],\n  exports: [\n    TextfieldComponent\n  ]\n})\nexport class TextfieldModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "TextfieldComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "TextfieldComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        }
+    ],
+    "miscellaneous": {
+        "variables": [
+            {
+                "name": "Avatar",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Avatar.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "AvatarDisabled",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Avatar.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Buscador",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/buscador.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "context",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/test.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+            },
+            {
+                "name": "Desktop",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Header.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "DesktopVersion",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Header.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.prod.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  production: true\n}"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  production: false\n}"
+            },
+            {
+                "name": "Principal",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Boton.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "PrincipalIcono",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Boton.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "PrincipalOff",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Boton.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "PrincipalOffIcono",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Boton.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "require",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/test.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "literal type"
+            },
+            {
+                "name": "Secundario",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Boton.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "SecundarioIcono",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Boton.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "SecundarioOff",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Boton.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "SecundarioOffIcono",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Boton.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Avatar.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<AvatarComponent>",
+                "defaultValue": "(args: AvatarComponent) => ({\r\n  props: args,\r\n  template: `<app-avatar [texto]=textoAvatar [disabled]=textdisabled></app-avatar>`\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Boton.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<BotonHbComponent>",
+                "defaultValue": "(args: BotonHbComponent) => ({\n  props: args,\n  template: `<app-boton-hb [tipo]=tipoBoton [texto]=texto [icono]=icono></app-boton-hb>`\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Header.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<HeaderComponent>",
+                "defaultValue": "(args: HeaderComponent) => ({\r\n  props: args,\r\n  template: `<app-header [tipo]=tipoHeader [version]=version></app-header>`\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/buscador.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<BuscadorComponent>",
+                "defaultValue": "(args: BuscadorComponent) => ({\r\n  props: args,\r\n  template: `<app-buscador [textPlaceholder]=textPlaceholder></app-buscador>`\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/textfield.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<TextfieldComponent>",
+                "defaultValue": "(args: TextfieldComponent) => ({\r\n  props: args,\r\n  template: `<app-textfield [textLabel1]=textUno [textLabel2]=textDos [textPlaceholder]=placeholder [disabled]=textdisabled></app-textfield>`\r\n})"
+            },
+            {
+                "name": "Terciario",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Boton.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "TerciarioIcono",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Boton.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "TerciarioOff",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Boton.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "TerciarioOffIcono",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Boton.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Textfield",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/textfield.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            }
+        ],
+        "functions": [],
+        "typealiases": [],
+        "enumerations": [],
+        "groupedVariables": {
+            "src/stories/Avatar.stories.ts": [
+                {
+                    "name": "Avatar",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Avatar.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "AvatarDisabled",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Avatar.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Avatar.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<AvatarComponent>",
+                    "defaultValue": "(args: AvatarComponent) => ({\r\n  props: args,\r\n  template: `<app-avatar [texto]=textoAvatar [disabled]=textdisabled></app-avatar>`\r\n})"
+                }
+            ],
+            "src/stories/buscador.stories.ts": [
+                {
+                    "name": "Buscador",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/buscador.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/buscador.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<BuscadorComponent>",
+                    "defaultValue": "(args: BuscadorComponent) => ({\r\n  props: args,\r\n  template: `<app-buscador [textPlaceholder]=textPlaceholder></app-buscador>`\r\n})"
+                }
+            ],
+            "src/test.ts": [
+                {
+                    "name": "context",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+                },
+                {
+                    "name": "require",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "literal type"
+                }
+            ],
+            "src/stories/Header.stories.ts": [
+                {
+                    "name": "Desktop",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Header.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "DesktopVersion",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Header.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Header.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<HeaderComponent>",
+                    "defaultValue": "(args: HeaderComponent) => ({\r\n  props: args,\r\n  template: `<app-header [tipo]=tipoHeader [version]=version></app-header>`\r\n})"
+                }
+            ],
+            "src/environments/environment.prod.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.prod.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  production: true\n}"
+                }
+            ],
+            "src/environments/environment.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  production: false\n}"
+                }
+            ],
+            "src/stories/Boton.stories.ts": [
+                {
+                    "name": "Principal",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Boton.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "PrincipalIcono",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Boton.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "PrincipalOff",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Boton.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "PrincipalOffIcono",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Boton.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Secundario",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Boton.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "SecundarioIcono",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Boton.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "SecundarioOff",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Boton.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "SecundarioOffIcono",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Boton.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Boton.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<BotonHbComponent>",
+                    "defaultValue": "(args: BotonHbComponent) => ({\n  props: args,\n  template: `<app-boton-hb [tipo]=tipoBoton [texto]=texto [icono]=icono></app-boton-hb>`\n})"
+                },
+                {
+                    "name": "Terciario",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Boton.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "TerciarioIcono",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Boton.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "TerciarioOff",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Boton.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "TerciarioOffIcono",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Boton.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                }
+            ],
+            "src/stories/textfield.stories.ts": [
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/textfield.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<TextfieldComponent>",
+                    "defaultValue": "(args: TextfieldComponent) => ({\r\n  props: args,\r\n  template: `<app-textfield [textLabel1]=textUno [textLabel2]=textDos [textPlaceholder]=placeholder [disabled]=textdisabled></app-textfield>`\r\n})"
+                },
+                {
+                    "name": "Textfield",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/textfield.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                }
+            ]
+        },
+        "groupedFunctions": {},
+        "groupedEnumerations": {},
+        "groupedTypeAliases": {}
+    },
+    "routes": [],
+    "coverage": {
+        "count": 0,
+        "status": "low",
+        "files": [
+            {
+                "filePath": "src/app/app.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AppComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/8",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/componentes/avatar/avatar.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AvatarComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/componentes/boton-hb/boton-hb.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "BotonHbComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/8",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/componentes/buscador/buscador.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "BuscadorComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/6",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/componentes/header/header.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "HeaderComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/6",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/componentes/lista/lista.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ListaComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/componentes/textfield/textfield.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "TextfieldComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/11",
+                "status": "low"
+            },
+            {
+                "filePath": "src/environments/environment.prod.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "environment",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/environments/environment.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "environment",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Avatar.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Avatar",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Avatar.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "AvatarDisabled",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Avatar.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Boton.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Principal",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Boton.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "PrincipalIcono",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Boton.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "PrincipalOff",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Boton.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "PrincipalOffIcono",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Boton.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Secundario",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Boton.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "SecundarioIcono",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Boton.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "SecundarioOff",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Boton.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "SecundarioOffIcono",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Boton.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Boton.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Terciario",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Boton.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "TerciarioIcono",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Boton.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "TerciarioOff",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Boton.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "TerciarioOffIcono",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Header.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Desktop",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Header.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "DesktopVersion",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Header.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/buscador.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Buscador",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/buscador.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/textfield.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/textfield.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Textfield",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/test.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "context",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/test.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "require",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            }
+        ]
+    }
+}

@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+.boton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    gap: 8px;
+
+    border-radius: 8px;
+
+    min-width: 79px;
+    height: 48px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16rem 1.500rem;
+    line-height: 24px;
+
+    color: #FFFFFF;
+
+    text-align: center;
+}
+
+.boton { cursor:pointer; }
+
+.H1Regular {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 40px;
+}
+
+.H1Medium {
+    font-size: 2rem;
+    line-height: 40px;
+}
+
+.H2Regular {
+    font-weight: 400;
+    font-size: 1.500rem;
+    line-height: 32px;
+}
+
+.H2Medium {
+    font-size: 1.500rem;
+    line-height: 40px;
+}
+
+.H3Regular {
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 24px;
+}
+
+.H3Medium {
+    font-size: 1.125rem;
+    line-height: 24px;
+}
+
+.H4Regular {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 24px;
+}
+
+.H4Medium {
+    font-size: 1rem;
+    line-height: 24px;
+}
+
+.H5Regular {
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 22px;
+}
+
+.H5Medium {
+    font-size: 0.875rem;
+    line-height: 22px;
+}
+
+.H6Regular {
+    font-weight: 400;
+    font-size: 0.750rem;
+    line-height: 12px;
+}
+
+.H6Medium {
+    font-size: 0.750rem;
+    line-height: 12px;
+}
+
+.principalHB {
+    background: #F37320;
+    border: none;
+}
+
+
+.principalHB:hover {
+    background: #FE9552;
+}
+
+.secundarioHB {
+    background: transparent;
+    border: solid #F37320;
+    color: #F37320;
+}
+
+.secundarioHB:hover {
+    border:solid #FE9552;
+    color: #FE9552
+}
+
+.terciarioHB {
+    background: transparent;
+    border: none;
+    color: #F37320;
+} 
+
+.terciarioHB:hover {
+    color: #FE9552;
+}
+
+.secundarioHB:hover .source , .terciarioHB:hover .source {
+    content:url("/assets/imagenes/iconodownloadnaranjahover.svg");
+}
+
+.principalOB {
+    background: #06CA75;
+    border: none;
+}
+
+.principalOB:hover {
+    background: #00AB8E;
+}
+
+.secundarioOB {
+    background: transparent;
+    border: solid #06CA75;
+    color: #06CA75;
+}
+
+.secundarioOB:hover {
+    border:solid #00AB8E;
+    color: #00AB8E;
+}
+
+.terciarioOB {
+    background: transparent;
+    border: none;
+    color: #06CA75;
+}
+
+.terciarioOB:hover {
+    color: #00AB8E;
+}
+
+.secundarioOB:hover .source , .terciarioOB:hover .source {
+    content:url("/assets/imagenes/iconodownloadverdehover.svg");
+}
+
+.principalOff {
+    background: #9B9B9B;
+    border: none;
+    cursor:not-allowed !important;
+}
+
+.secundarioOff {
+    background: transparent;
+    border: solid #9B9B9B;
+    color: #9B9B9B;
+    cursor:not-allowed !important;
+}
+
+.terciarioOff {
+    background: transparent;
+    border: none;
+    color: #9B9B9B;
+    cursor:not-allowed !important;
+}
+

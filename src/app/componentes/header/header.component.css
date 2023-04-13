@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+body {
+	padding-top: 80px;
+}
+
+.tipografiag {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    float: right;
+}
+
+.tipog {
+    box-sizing: border-box;
+    flex-direction: row;
+    align-items: right;
+    padding: 12px 16px;
+    gap: 16px;
+    overflow: hidden;
+    border-bottom: 1px solid #DEDEDE;
+    width: 100%;
+}
+
+.desktopHB {
+    background: #FFFFFF;
+    color: #333333;
+}
+
+.desktopOB {
+    background: #06CA75;
+    color: #FFFFFF;
+}
+
+.desktopHB img {
+    content:url("/assets/imagenes/hbicononaranja.svg");
+}
+
+.desktopOB img {
+    content:url("/assets/imagenes/obiconoblanco.svg");
+}
+
+.select select {
+    padding: 4px 8px 4px 4px;
+    width: 120px;
+    height: 32px;
+    outline: #06CA75; 
+    -moz-border-radius: 2.5em; 
+    -webkit-border-radius: 2.5em; 
+    border-radius: 2.5em;
+    background: #06CA75 url("/assets/imagenes/obRed.svg") no-repeat 90% center;
+    border-color: transparent;
+    color: transparent;
+    position: fixed;
+    right: 12px;
+    top: 12px;
+}

@@ -1,0 +1,16 @@
+<header class="tipog {{tipo}}" >
+    <div>
+        <img>
+        <p *ngIf="version" class="tipografiag {{version}}">
+            {{version}}
+        </p>
+        <div *ngIf="selector" class="select {{selector}}">
+            <select>
+              <option>Opción 1</option>
+              <option>Opción 2</option>
+              <option>Opción X</option>
+            </select>
+        </div>
+    </div>
+</header>
+

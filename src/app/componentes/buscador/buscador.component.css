@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+.buscador {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px;
+    gap: 8px;
+
+    width: 552px;
+    height: 56px;
+
+    background: #FFFFFF;
+
+    border: 1px solid #DEDEDE;
+    border-radius: 8px;
+}
+
+.textPlaceholder {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #9B9B9B;
+}
+
+input[type=search i]:focus {
+    background: #FFFFFF;
+    border: 1px solid #DEDEDE;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    outline: none;
+    color: #333333;
+}
+
+/* Completa */
+/* input[type=search i]:focus::-webkit-search-cancel-button {
+    content: url("/assets/imagenes/iconocruz.svg");
+    appearance: none;
+} */
+
+/* input[type=search i]:focus #search-clear {
+    content: url("/assets/imagenes/iconocruz.svg");
+    appearance: none;
+}
+
+input[type="search" i]:enabled:read-write:-webkit-any(:focus)::-webkit-search-cancel-button {
+    content: url("/assets/imagenes/iconocruz.svg");
+    appearance: none;
+}
+
+input[type="search" i]::-webkit-search-cancel-button {
+    content: url("/assets/imagenes/iconocruz.svg");
+    appearance: none;
+} */
+
+@media screen and (max-width: 768px) {
+    .buscador {
+        width: 100%;
+    }
+}
+
+.true {
+    background: #FFFFFF;
+    border: 1px solid #DEDEDE;
+    border-radius: 8px;
+    cursor:not-allowed !important;
+    box-shadow: none !important;
+}
+
+.true:-webkit-search-cancel-button {
+    opacity: 0 !important;
+    appearance: none;
+}

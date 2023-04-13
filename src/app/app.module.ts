@@ -1,8 +1,14 @@
-import { NgModule } from '@angular/core';
+import { forwardRef, NgModule } from '@angular/core';
+import { FormsModule, NG_VALUE_ACCESSOR } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AvatarModule } from './componentes/avatar.module';
+import { BotonModule } from './componentes/boton.module';
+import { BuscadorModule } from './componentes/buscador.module';
+import { HeaderModule } from './componentes/header.module';
+import { ListaModule } from './componentes/lista.module';
+import { TextfieldModule } from './componentes/textfield.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +16,13 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    TextfieldModule,
+    HeaderModule,
+    BuscadorModule,
+    AvatarModule,
+    BotonModule,
+    ListaModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
