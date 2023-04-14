@@ -1,1 +1,13 @@
-<p>lista works!</p>
+<div>
+    <div class="div-general {{disabled}}">
+        <!-- <app-avatar></app-avatar> -->
+        <div class="text">
+            <div class="div-3">
+                <p class="text-p">{{textoPrincipal}}</p>
+                        <img *ngIf="icono" src="{{icono}}" class="{{icono}}">
+                        <p *ngIf="textoOpcional2" class="textoOpcional2 {{to2}}">{{textoOpcional2}}</p>
+            </div>
+            <p class="text-o">{{textoOpcional}}</p>
+        </div>
+    </div>
+</div>

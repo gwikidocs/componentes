@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-lista',
@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListaComponent implements OnInit {
 
+  @Input() icono: string;
+  @Input() textoPrincipal: string;
+  @Input() textoOpcional: string;
+  @Input() textoOpcional2: string;
+  @Input() disabled: string;
+  @Input() to2: string;
+  
   constructor() { }
 
   ngOnInit(): void {
