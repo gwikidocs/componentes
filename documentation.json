@@ -117,7 +117,7 @@
                 }
             ],
             "stylesData": "",
-            "templateData": "<div>\r\n  <app-header [tipo]=\"'desktopHB'\" [version]=\"'1.0.0 V2'\"></app-header>\r\n    \r\n  <div class=\"content\" role=\"main\">\r\n    \r\n    <!-- Highlight Card -->\r\n    <div class=\"card highlight-card card-small\">\r\n\r\n      <svg id=\"rocket\" xmlns=\"http://www.w3.org/2000/svg\" width=\"101.678\" height=\"101.678\" viewBox=\"0 0 101.678 101.678\">\r\n        <title>Rocket Ship</title>\r\n        <g id=\"Group_83\" data-name=\"Group 83\" transform=\"translate(-141 -696)\">\r\n          <circle id=\"Ellipse_8\" data-name=\"Ellipse 8\" cx=\"50.839\" cy=\"50.839\" r=\"50.839\" transform=\"translate(141 696)\" fill=\"#dd0031\"/>\r\n          <g id=\"Group_47\" data-name=\"Group 47\" transform=\"translate(165.185 720.185)\">\r\n            <path id=\"Path_33\" data-name=\"Path 33\" d=\"M3.4,42.615a3.084,3.084,0,0,0,3.553,3.553,21.419,21.419,0,0,0,12.215-6.107L9.511,30.4A21.419,21.419,0,0,0,3.4,42.615Z\" transform=\"translate(0.371 3.363)\" fill=\"#fff\"/>\r\n            <path id=\"Path_34\" data-name=\"Path 34\" d=\"M53.3,3.221A3.09,3.09,0,0,0,50.081,0,48.227,48.227,0,0,0,18.322,13.437c-6-1.666-14.991-1.221-18.322,7.218A33.892,33.892,0,0,1,9.439,25.1l-.333.666a3.013,3.013,0,0,0,.555,3.553L23.985,43.641a2.9,2.9,0,0,0,3.553.555l.666-.333A33.892,33.892,0,0,1,32.647,53.3c8.55-3.664,8.884-12.326,7.218-18.322A48.227,48.227,0,0,0,53.3,3.221ZM34.424,9.772a6.439,6.439,0,1,1,9.106,9.106,6.368,6.368,0,0,1-9.106,0A6.467,6.467,0,0,1,34.424,9.772Z\" transform=\"translate(0 0.005)\" fill=\"#fff\"/>\r\n          </g>\r\n        </g>\r\n      </svg>\r\n\r\n      <span>{{ title }} app is running!</span>\r\n\r\n    </div>\r\n\r\n    <h2>Resources</h2>\r\n    <p>Here are some links to help you get started:</p>\r\n\r\n\r\n    <!-- [textLabel1]=\"'Label'\" [textLabel2]=\"'Detalle'\" -->\r\n    <!-- <app-textfield [textPlaceholder]=\"'Placeholder'\" ngDefaultControl [(ngModel)]=\"operandoA\"></app-textfield> -->\r\n\r\n    <!-- <app-textfield [textLabel1]=\"'Label'\" [textLabel2]=\"'Detalle'\" [textPlaceholder]=\"'Placeholder'\" ngDefaultControl [(ngModel)]=\"operandoB\"> </app-textfield> -->\r\n\r\n    <!-- <app-boton-hb (click)=\"onString()\" [tipo]=\"'principalHB'\" [texto]=\"'Aceptar'\"></app-boton-hb> -->\r\n\r\n    <!-- <button type=\"submit\" (click)=\"onString()\">Aceptar</button> -->\r\n    <!-- <input type=\"text\" ngDefaultControl [(ngModel)]=\"operandoA\"> -->\r\n\r\n    <!-- <p> {{resultado}} </p> -->\r\n\r\n    <!-- <app-buscador [textPlaceholder]=\"'Placeholder'\"></app-buscador> -->\r\n\r\n    <!-- <app-avatar [texto]=\"'FG'\" [disabled]=\"'true'\"></app-avatar> -->\r\n\r\n    <!-- <app-lista [textoOpcional2]=\"'secundario'\" [to2]=\"true\" [textoPrincipal]=\"'Principal'\" [textoOpcional]=\"'Detalle'\">\r\n  </app-lista> -->\r\n\r\n    <!-- <app-lista></app-lista> -->\r\n\r\n  </div>\r\n</div>"
+            "templateData": "<div>\r\n  <app-header [tipo]=\"'desktopHB'\" [version]=\"'1.0.0 V2'\"></app-header>\r\n    \r\n  <div class=\"content\" role=\"main\">\r\n    \r\n    <!-- Highlight Card -->\r\n    <div class=\"card highlight-card card-small\">\r\n\r\n      <svg id=\"rocket\" xmlns=\"http://www.w3.org/2000/svg\" width=\"101.678\" height=\"101.678\" viewBox=\"0 0 101.678 101.678\">\r\n        <title>Rocket Ship</title>\r\n        <g id=\"Group_83\" data-name=\"Group 83\" transform=\"translate(-141 -696)\">\r\n          <circle id=\"Ellipse_8\" data-name=\"Ellipse 8\" cx=\"50.839\" cy=\"50.839\" r=\"50.839\" transform=\"translate(141 696)\" fill=\"#dd0031\"/>\r\n          <g id=\"Group_47\" data-name=\"Group 47\" transform=\"translate(165.185 720.185)\">\r\n            <path id=\"Path_33\" data-name=\"Path 33\" d=\"M3.4,42.615a3.084,3.084,0,0,0,3.553,3.553,21.419,21.419,0,0,0,12.215-6.107L9.511,30.4A21.419,21.419,0,0,0,3.4,42.615Z\" transform=\"translate(0.371 3.363)\" fill=\"#fff\"/>\r\n            <path id=\"Path_34\" data-name=\"Path 34\" d=\"M53.3,3.221A3.09,3.09,0,0,0,50.081,0,48.227,48.227,0,0,0,18.322,13.437c-6-1.666-14.991-1.221-18.322,7.218A33.892,33.892,0,0,1,9.439,25.1l-.333.666a3.013,3.013,0,0,0,.555,3.553L23.985,43.641a2.9,2.9,0,0,0,3.553.555l.666-.333A33.892,33.892,0,0,1,32.647,53.3c8.55-3.664,8.884-12.326,7.218-18.322A48.227,48.227,0,0,0,53.3,3.221ZM34.424,9.772a6.439,6.439,0,1,1,9.106,9.106,6.368,6.368,0,0,1-9.106,0A6.467,6.467,0,0,1,34.424,9.772Z\" transform=\"translate(0 0.005)\" fill=\"#fff\"/>\r\n          </g>\r\n        </g>\r\n      </svg>\r\n\r\n      <span>{{ title }} app is running!</span>\r\n\r\n    </div>\r\n\r\n    <h2>Resources</h2>\r\n    <p>Here are some links to help you get started:</p>\r\n\r\n\r\n    <!-- [textLabel1]=\"'Label'\" [textLabel2]=\"'Detalle'\" -->\r\n    <!-- <app-textfield [textPlaceholder]=\"'Placeholder'\" ngDefaultControl [(ngModel)]=\"operandoA\"></app-textfield> -->\r\n\r\n    <!-- <app-textfield [textLabel1]=\"'Label'\" [textLabel2]=\"'Detalle'\" [textPlaceholder]=\"'Placeholder'\" ngDefaultControl [(ngModel)]=\"operandoB\"> </app-textfield> -->\r\n\r\n    <!-- <app-boton-hb (click)=\"onString()\" [tipo]=\"'principalHB'\" [texto]=\"'Aceptar'\"></app-boton-hb> -->\r\n\r\n    <!-- <button type=\"submit\" (click)=\"onString()\">Aceptar</button> -->\r\n    <!-- <input type=\"text\" ngDefaultControl [(ngModel)]=\"operandoA\"> -->\r\n\r\n    <!-- <p> {{resultado}} </p> -->\r\n\r\n    <!-- <app-buscador [textPlaceholder]=\"'Placeholder'\"></app-buscador> -->\r\n\r\n    <!-- <app-avatar [texto]=\"'FG'\" [disabled]=\"'true'\"></app-avatar> -->\r\n\r\n    <app-lista [textoOpcional2]=\"'secundario'\" [textoPrincipal]=\"'Principal'\" [textoOpcional]=\"'Detalle'\" [icono]=\"'si'\">\r\n  </app-lista> <!--[to2]=\"true\"-->\r\n\r\n    <!-- <app-lista></app-lista> -->\r\n\r\n  </div>\r\n</div>"
         },
         {
             "name": "AvatarComponent",
@@ -1115,16 +1115,6 @@
                 "name": "environment",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/environments/environment.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "object",
-                "defaultValue": "{\n  production: false\n}"
-            },
-            {
-                "name": "environment",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/environments/environment.prod.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -1132,7 +1122,87 @@
                 "defaultValue": "{\n  production: true\n}"
             },
             {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  production: false\n}"
+            },
+            {
                 "name": "Lista",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/lista.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "ListaDetalleFalse",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/lista.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "ListaDetalleFalseEnableIcono",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/lista.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "ListaDetalleSecundarioTo2True",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/lista.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "ListaDetalleSecundarioTrue",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/lista.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "ListaDisableIcono",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/lista.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "ListaSecundarioTo2True",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/lista.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "ListaSecundarioTrue",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/stories/lista.stories.ts",
@@ -1278,7 +1348,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<ListaComponent>",
-                "defaultValue": "(args: ListaComponent) => ({\r\n    props: args,\r\n    template: ` <app-lista [textoOpcional2]=\"'secundario'\" [to2]=\"true\" [textoPrincipal]=\"'principal'\" [textoOpcional]=\"'detalle'\">\r\n    </app-lista>`\r\n  })"
+                "defaultValue": "(args: ListaComponent) => ({\r\nprops: args,\r\ntemplate: ` <app-lista [textoOpcional2]=textoOpcional2 [to2]=to2 [textoPrincipal]=textoPrincipal [textoOpcional]=textoOpcional [icono]=icono></app-lista>`\r\n})"
             },
             {
                 "name": "Template",
@@ -1452,18 +1522,6 @@
                     "defaultValue": "(args: HeaderComponent) => ({\r\n  props: args,\r\n  template: `<app-header [tipo]=tipoHeader [version]=version></app-header>`\r\n})"
                 }
             ],
-            "src/environments/environment.ts": [
-                {
-                    "name": "environment",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/environments/environment.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "object",
-                    "defaultValue": "{\n  production: false\n}"
-                }
-            ],
             "src/environments/environment.prod.ts": [
                 {
                     "name": "environment",
@@ -1476,9 +1534,91 @@
                     "defaultValue": "{\n  production: true\n}"
                 }
             ],
+            "src/environments/environment.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  production: false\n}"
+                }
+            ],
             "src/stories/lista.stories.ts": [
                 {
                     "name": "Lista",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/lista.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "ListaDetalleFalse",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/lista.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "ListaDetalleFalseEnableIcono",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/lista.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "ListaDetalleSecundarioTo2True",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/lista.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "ListaDetalleSecundarioTrue",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/lista.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "ListaDisableIcono",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/lista.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "ListaSecundarioTo2True",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/lista.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "ListaSecundarioTrue",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/stories/lista.stories.ts",
@@ -1495,7 +1635,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story<ListaComponent>",
-                    "defaultValue": "(args: ListaComponent) => ({\r\n    props: args,\r\n    template: ` <app-lista [textoOpcional2]=\"'secundario'\" [to2]=\"true\" [textoPrincipal]=\"'principal'\" [textoOpcional]=\"'detalle'\">\r\n    </app-lista>`\r\n  })"
+                    "defaultValue": "(args: ListaComponent) => ({\r\nprops: args,\r\ntemplate: ` <app-lista [textoOpcional2]=textoOpcional2 [to2]=to2 [textoPrincipal]=textoPrincipal [textoOpcional]=textoOpcional [icono]=icono></app-lista>`\r\n})"
                 }
             ],
             "src/stories/boton.stories.ts": [
@@ -1961,6 +2101,76 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "Lista",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/lista.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "ListaDetalleFalse",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/lista.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "ListaDetalleFalseEnableIcono",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/lista.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "ListaDetalleSecundarioTo2True",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/lista.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "ListaDetalleSecundarioTrue",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/lista.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "ListaDisableIcono",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/lista.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "ListaSecundarioTo2True",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/lista.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "ListaSecundarioTrue",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
